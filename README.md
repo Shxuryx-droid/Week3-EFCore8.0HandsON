@@ -32,7 +32,7 @@ This project is a step-by-step .NET console application built to teach **Entity 
 
 ### Models
 
-```csharp
+csharp
 public class Category {
     public int Id { get; set; }
     public string Name { get; set; }
@@ -46,8 +46,12 @@ public class Product {
     public int CategoryId { get; set; }
     public Category Category { get; set; }
 }
-
+--------------------------------
 Lab 3: Migrations with EF Core CLI
 dotnet tool install --global dotnet-ef
 dotnet ef migrations add InitialCreate
 dotnet ef database update
+---------------------------------
+
+Credit--More Info
+Used AI for formatting and indentation .
